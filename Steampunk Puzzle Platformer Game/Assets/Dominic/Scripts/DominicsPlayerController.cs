@@ -20,7 +20,7 @@ public class DominicsPlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Movement();
     }
 
     private void Movement()
