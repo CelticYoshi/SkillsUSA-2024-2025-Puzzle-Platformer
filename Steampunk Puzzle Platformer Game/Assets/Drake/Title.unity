@@ -357,6 +357,8 @@ MonoBehaviour:
   levelSelectScene: 1
   controlsScene: 2
   titleScene: 0
+  levelOneScene: 0
+  levelTwoScene: 0
 --- !u!4 &439219541
 Transform:
   m_ObjectHideFlags: 0
@@ -942,8 +944,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279506175
-  m_fontColor: {r: 1, g: 0.08018869, b: 0.08018869, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
