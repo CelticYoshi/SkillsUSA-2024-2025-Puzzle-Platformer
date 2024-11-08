@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class DominicMagnet : MonoBehaviour
 {
-    public gameObject magnetBeam;
+    public GameObject magnetBeam;
+    public SpriteRenderer magnetSpriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         magnetBeam.gameObject.SetActive(false);
+        magnetSpriteRenderer.enabled = false;
     }
 
     // Update is called once per frame
@@ -18,11 +20,21 @@ public class DominicMagnet : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
-            magnetBeam.gameObject.SetActive(true);
+            //magnetBeam.gameObject.SetActive(true);
+            magnetSpriteRenderer.enabled = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            //magnetBeam.gameObject.SetActive(false);
+            magnetSpriteRenderer.enabled = false;
         }
     }
 }
