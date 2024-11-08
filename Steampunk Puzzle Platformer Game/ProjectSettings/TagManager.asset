@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1814381675
+    locked: 0
+  - name: VFX
+    uniqueID: 813239039
+    locked: 0
+  - name: Level
+    uniqueID: 2490344119
+    locked: 0
+  - name: Player
+    uniqueID: 2859486895
+    locked: 0
