@@ -10,8 +10,8 @@ public class DominicMagnetBeam : MonoBehaviour
     {
        if (other.CompareTag("Player"))
        {
-       isBeamActive = true;
-       other.GetComponentInChildren<Animator>().SetBool("IsMagnetActive", isBeamActive);
+            isBeamActive = true;
+            //other.GetComponentInChildren<Animator>().SetBool("IsMagnetActive", isBeamActive);
        }
     }
 
@@ -20,7 +20,7 @@ public class DominicMagnetBeam : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isBeamActive = false;
-            other.GetComponentInChildren<Animator>().SetBool("IsMagnetActive", isBeamActive);
+            //other.GetComponentInChildren<Animator>().SetBool("IsMagnetActive", isBeamActive);
         }
     }
 
@@ -38,13 +38,13 @@ public class DominicMagnetBeam : MonoBehaviour
         return isBeamActive;
     }
 
-    IEnumerator PlayerIsInBeam()
-    {
-        if (isBeamActive)
-        {
-            yield return new WaitForSeconds(1.5f);
+    //IEnumerator PlayerIsInBeam()
+    //{
+        //if (isBeamActive)
+        //{
+            //yield return new WaitForSeconds(1.5f);
             //other.GetComponentInChildren<Animator>().SetTrigger("InBeam");
 
-        }
-    }
+        //}
+    //}
 }

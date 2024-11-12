@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class DominicMagnet : MonoBehaviour
 {
-    public GameObject magnetBeam;
+    //public GameObject magnetBeam;
     public SpriteRenderer magnetSpriteRenderer;
+
+    public Vector3 _myLocation;
 
     // Start is called before the first frame update
     void Start()
     {
-        magnetBeam.gameObject.SetActive(false);
+        //magnetBeam.gameObject.SetActive(false);
         magnetSpriteRenderer.enabled = false;
+        _myLocation = transform.position;
     }
 
     // Update is called once per frame

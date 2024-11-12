@@ -902,8 +902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5611ff96e81934e84804f4a73d0650af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnetBeam: {fileID: 944821474}
   magnetSpriteRenderer: {fileID: 944821476}
+  _myLocation: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
