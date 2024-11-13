@@ -6,7 +6,6 @@ public class DominicMagnet : MonoBehaviour
 {
     //public GameObject magnetBeam;
     public SpriteRenderer magnetSpriteRenderer;
-
     public Vector3 _myLocation;
 
     // Start is called before the first frame update
