@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 53495919}
   m_Layer: 0
   m_Name: PNG Spike ball (4)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 94757013}
   m_Layer: 0
   m_Name: PNG Spike ball (7)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1277,6 +1277,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &212110768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5897629329766585605, guid: b42faa31867d5424690ebb6647c20ebd, type: 3}
+  m_PrefabInstance: {fileID: 1155158972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &212110769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212110768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caef21640da6c468ca212b53b16e65b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelSelectScene: 0
+  controlsScene: 0
+  titleScene: 0
+  levelOneScene: 0
+  levelTwoScene: 0
+  loseScene: 5
+--- !u!114 &212110775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212110768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc668d83aa44499b951aec1943d78aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 15
+  loseScene: 5
 --- !u!1 &233877355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,7 +1328,7 @@ GameObject:
   - component: {fileID: 233877359}
   m_Layer: 0
   m_Name: PNG Spike ball (12)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1550,7 +1588,7 @@ GameObject:
   - component: {fileID: 272354566}
   m_Layer: 0
   m_Name: PNG Spike ball (2)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1846,7 +1884,7 @@ GameObject:
   - component: {fileID: 302313865}
   m_Layer: 0
   m_Name: PNG Spike ball (11)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2236,7 +2274,7 @@ GameObject:
   - component: {fileID: 336542554}
   m_Layer: 0
   m_Name: PNG Spike ball (16)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2679,6 +2717,7 @@ MonoBehaviour:
   titleScene: 0
   levelOneScene: 0
   levelTwoScene: 0
+  loseScene: 0
 --- !u!4 &431883163
 Transform:
   m_ObjectHideFlags: 0
@@ -3005,7 +3044,7 @@ GameObject:
   - component: {fileID: 628905149}
   m_Layer: 0
   m_Name: PNG Spike ball (6)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3219,7 +3258,7 @@ GameObject:
   - component: {fileID: 660997699}
   m_Layer: 0
   m_Name: PNG Spike ball (14)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3349,7 +3388,7 @@ GameObject:
   - component: {fileID: 671797965}
   m_Layer: 0
   m_Name: PNG Spike ball (1)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3571,7 +3610,7 @@ GameObject:
   - component: {fileID: 695772343}
   m_Layer: 0
   m_Name: PNG Spike ball
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4121,7 +4160,7 @@ GameObject:
   - component: {fileID: 902114499}
   m_Layer: 0
   m_Name: PNG Spike ball (18)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4251,7 +4290,7 @@ GameObject:
   - component: {fileID: 905580498}
   m_Layer: 0
   m_Name: PNG Spike ball (17)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4381,7 +4420,7 @@ GameObject:
   - component: {fileID: 940522048}
   m_Layer: 0
   m_Name: PNG Spike ball (10)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5319,7 +5358,7 @@ GameObject:
   - component: {fileID: 1078167426}
   m_Layer: 0
   m_Name: PNG Spike ball (13)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5449,7 +5488,7 @@ GameObject:
   - component: {fileID: 1110394060}
   m_Layer: 0
   m_Name: PNG Spike ball (5)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5795,7 +5834,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5897629329766585605, guid: b42faa31867d5424690ebb6647c20ebd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 212110769}
+    - targetCorrespondingSourceObject: {fileID: 5897629329766585605, guid: b42faa31867d5424690ebb6647c20ebd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 212110775}
   m_SourcePrefab: {fileID: 100100000, guid: b42faa31867d5424690ebb6647c20ebd, type: 3}
 --- !u!1 &1177830402
 GameObject:
@@ -6685,7 +6730,7 @@ GameObject:
   - component: {fileID: 1425082901}
   m_Layer: 0
   m_Name: PNG Spike ball (15)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8732,7 +8777,7 @@ GameObject:
   - component: {fileID: 2006063978}
   m_Layer: 0
   m_Name: PNG Spike ball (8)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8862,7 +8907,7 @@ GameObject:
   - component: {fileID: 2006294977}
   m_Layer: 0
   m_Name: PNG Spike ball (3)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9110,7 +9155,7 @@ GameObject:
   - component: {fileID: 2131847196}
   m_Layer: 0
   m_Name: PNG Spike ball (9)
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

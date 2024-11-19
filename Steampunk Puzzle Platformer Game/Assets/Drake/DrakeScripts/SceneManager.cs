@@ -10,7 +10,8 @@ public class LevelLoader : MonoBehaviour
     public int titleScene;
     public int levelOneScene;
     public int levelTwoScene;
-
+    public int loseScene;
+   
     // Start is called before the first frame update
     void Start()
     {
