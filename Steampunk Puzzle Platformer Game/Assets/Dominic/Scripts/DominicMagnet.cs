@@ -7,6 +7,7 @@ public class DominicMagnet : MonoBehaviour
     //public GameObject magnetBeam;
     public SpriteRenderer magnetSpriteRenderer;
     //public Vector3 _myLocation;
+    public bool magnetActive;
 
     // Start is called before the first frame update
     void Start()
@@ -39,4 +40,9 @@ public class DominicMagnet : MonoBehaviour
             magnetSpriteRenderer.enabled = false;
         }
     }
+
+    //public bool magnetActive()
+    //{
+        //return magnetActive;
+    //}
 }

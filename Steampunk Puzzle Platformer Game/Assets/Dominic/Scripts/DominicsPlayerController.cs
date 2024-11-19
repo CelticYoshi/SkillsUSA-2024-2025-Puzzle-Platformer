@@ -6,6 +6,7 @@ public class DominicsPlayerController : MonoBehaviour
 {
     public float movespeed = 5f;
     public float jumpForce = 15f;
+    public DominicMagnet _magnet;
 
     private Rigidbody2D _rigidbody2D;
     private CapsuleCollider2D _capsuleCollider2D;
@@ -20,6 +21,7 @@ public class DominicsPlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponentInChildren<Animator>();
         _magnetBeam = GameObject.Find("Magnet Beam").GetComponent<DominicMagnetBeam>();
+        _magnet = GameObject.Find("Magnet").GetComponent<DominicMagnet>();
     }
 
     // Update is called once per frame
@@ -61,5 +63,10 @@ public class DominicsPlayerController : MonoBehaviour
     public void SetMagnetParent()
     {
         //_magnetParent
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        
     }
 }
