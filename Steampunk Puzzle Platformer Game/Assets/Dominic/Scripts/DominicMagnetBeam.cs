@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DominicMagnetBeam : MonoBehaviour
 {
-    bool isBeamActive = false;
+   public bool isBeamActive = false;
     
     void OnTriggerEnter2D(Collider2D other)
     {

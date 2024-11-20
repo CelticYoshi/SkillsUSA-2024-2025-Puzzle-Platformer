@@ -5,7 +5,7 @@ using UnityEngine;
 public class DominicsPlayerController : MonoBehaviour
 {
     public float movespeed = 5f;
-    public float jumpForce = 15f;
+    public float jumpForce = 3f;
     public DominicMagnet _magnet;
 
     private Rigidbody2D _rigidbody2D;
@@ -13,6 +13,7 @@ public class DominicsPlayerController : MonoBehaviour
     private Animator _animator;
     private DominicMagnetBeam _magnetBeam;
     private Transform _magnetParent;
+    [SerializeField] private bool _isInMagnet;
 
     // Start is called before the first frame update
     void Start()
@@ -40,33 +41,34 @@ public class DominicsPlayerController : MonoBehaviour
         _rigidbody2D.velocity = new Vector2(horizontalInput * movespeed, _rigidbody2D.velocity.y);
     }
 
-    private void PlayerInMagnet()
-    {
-        if(_magnetBeam.IsBeamActive())
-        {
-            _animator.SetBool("IsMagnetActive", _magnetBeam.IsBeamActive());
-            StartCoroutine("PlayerGoingUp");
-        }
-        else
-        {
-            _animator.SetBool("IsMagnetActive", _magnetBeam.IsBeamActive());
-            _animator.SetBool("InBeam", false);
-        }
-    }
-
     IEnumerator PlayerGoingUp()
     {
         yield return new WaitForSeconds(1.2f);
         _animator.SetBool("InBeam", true);
     }
 
-    public void SetMagnetParent()
-    {
-        //_magnetParent
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Magnet"))
+            {
+                _isInMagnet = true;
+                StartCoroutine("PlayerInMagnet");
+            }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Magnet"))
+            {
+                _isInMagnet = false;
+            }
+    }
+
+    void PlayerInMagnet()
+    {
+        if (_isInMagnet)
+            {
+                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpForce);
+            }
     }
 }

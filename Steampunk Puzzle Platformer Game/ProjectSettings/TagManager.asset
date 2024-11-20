@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Spike
+  - Magnet
+  - MagnetBeam
   layers:
   - Default
   - TransparentFX
