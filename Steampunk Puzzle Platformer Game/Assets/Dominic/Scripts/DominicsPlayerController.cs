@@ -51,6 +51,7 @@ public class DominicsPlayerController : MonoBehaviour
     {
         if (other.CompareTag("Magnet"))
             {
+                //new WaitForSeconds (1.2f);
                 _isInMagnet = true;
                 StartCoroutine("PlayerInMagnet");
             }
@@ -61,14 +62,17 @@ public class DominicsPlayerController : MonoBehaviour
         if (other.CompareTag("Magnet"))
             {
                 _isInMagnet = false;
+                _animator.SetBool("IsMagnetActive", false);
             }
     }
 
     void PlayerInMagnet()
     {
         if (_isInMagnet)
-            {
-                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpForce);
-            }
+        {
+            new WaitForSeconds (1.2f);
+            _animator.SetBool("IsMagnetActive", true);
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpForce);
+        }
     }
 }
