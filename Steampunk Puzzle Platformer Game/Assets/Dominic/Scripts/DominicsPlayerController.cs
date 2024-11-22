@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DominicsPlayerController : MonoBehaviour
 {
     public float movespeed = 5f;
     public float jumpForce = 3f;
     public DominicMagnet _magnet;
+    public int loseScene;
 
     private Rigidbody2D _rigidbody2D;
     private CapsuleCollider2D _capsuleCollider2D;
@@ -54,6 +56,7 @@ public class DominicsPlayerController : MonoBehaviour
                 //new WaitForSeconds (1.2f);
                 _isInMagnet = true;
                 StartCoroutine("PlayerInMagnet");
+
             }
     }
 
@@ -73,6 +76,15 @@ public class DominicsPlayerController : MonoBehaviour
             new WaitForSeconds (1.2f);
             _animator.SetBool("IsMagnetActive", true);
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpForce);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Spike"))
+        {
+            SceneManager.LoadScene(loseScene);
+            //Debug.Log("I hit the spike");
         }
     }
 }
