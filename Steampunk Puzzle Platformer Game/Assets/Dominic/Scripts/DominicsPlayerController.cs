@@ -16,6 +16,7 @@ public class DominicsPlayerController : MonoBehaviour
     private DominicMagnetBeam _magnetBeam;
     private Transform _magnetParent;
     [SerializeField] private bool _isInMagnet;
+    [SerializeField] private bool _isInDoor;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,13 @@ public class DominicsPlayerController : MonoBehaviour
                 StartCoroutine("PlayerInMagnet");
 
             }
+        
+        if (other.CompareTag("Door"))
+        {
+            _isInDoor = true;
+            _animator.SetBool("PlayerAtDoor", true);
+            SceneManager.LoadScene(6);
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -83,6 +91,8 @@ public class DominicsPlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Spike"))
         {
+            //new WaitForSeconds(10f);
+            _animator.SetBool("PlayerTouchSaw", true);
             SceneManager.LoadScene(loseScene);
             //Debug.Log("I hit the spike");
         }
