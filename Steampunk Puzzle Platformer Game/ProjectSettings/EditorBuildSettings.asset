@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Drake/Controls.unity
     guid: a8b4996997a734f1c887f032720ab808
   - enabled: 1
-    path: Assets/Drake/Story.unity
-    guid: 59136d22d52374de5b30092d5559bf99
-  - enabled: 1
     path: Assets/Drake/Level One.unity
     guid: 800728233750546dab1c9a50d0298027
   - enabled: 1
@@ -29,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Drake/Win.unity
     guid: 71c512ba387ee4c61896d1331fb572cb
+  - enabled: 1
+    path: Assets/Drake/Story.unity
+    guid: 59136d22d52374de5b30092d5559bf99
   m_configObjects: {}

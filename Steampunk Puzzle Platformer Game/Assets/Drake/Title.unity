@@ -360,7 +360,7 @@ MonoBehaviour:
   levelOneScene: 0
   levelTwoScene: 0
   loseScene: 0
-  storyScene: 3
+  storyScene: 7
 --- !u!4 &439219541
 Transform:
   m_ObjectHideFlags: 0
