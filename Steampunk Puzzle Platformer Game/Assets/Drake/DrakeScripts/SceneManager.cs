@@ -11,6 +11,7 @@ public class LevelLoader : MonoBehaviour
     public int levelOneScene;
     public int levelTwoScene;
     public int loseScene;
+    public int storyScene;
    
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,11 @@ public class LevelLoader : MonoBehaviour
     public void OnTwoPressed()
     {
         SceneManager.LoadScene(levelTwoScene);
+    }
+
+    public void onStoryPressed()
+    {
+        SceneManager.LoadScene(storyScene);
     }
 }
 
