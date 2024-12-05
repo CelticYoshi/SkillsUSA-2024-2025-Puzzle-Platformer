@@ -147,6 +147,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Back Button
       objectReference: {fileID: 0}
+    - target: {fileID: 3266107134837774128, guid: b0236be2d6c1d4baf991f9ed3eb3afe3, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266107134837774128, guid: b0236be2d6c1d4baf991f9ed3eb3afe3, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266107134837774128, guid: b0236be2d6c1d4baf991f9ed3eb3afe3, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8347298353009049472, guid: b0236be2d6c1d4baf991f9ed3eb3afe3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -173,11 +185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8347298353009049472, guid: b0236be2d6c1d4baf991f9ed3eb3afe3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8347298353009049472, guid: b0236be2d6c1d4baf991f9ed3eb3afe3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8347298353009049472, guid: b0236be2d6c1d4baf991f9ed3eb3afe3, type: 3}
       propertyPath: m_LocalScale.x
@@ -225,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8347298353009049472, guid: b0236be2d6c1d4baf991f9ed3eb3afe3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -350
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8347298353009049472, guid: b0236be2d6c1d4baf991f9ed3eb3afe3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
