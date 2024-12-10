@@ -58,5 +58,10 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene(storyScene);
     }
+
+    public void onQuitPressed()
+    {
+        Application.Quit();
+    }
 }
 
